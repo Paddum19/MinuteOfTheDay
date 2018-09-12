@@ -1,0 +1,33 @@
+<html>
+  <head>
+        <title>minute of day</title>
+		
+        <script language="javascript">
+                function findMinuteOfDay()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer1");
+                        ansD.value = (val1)*60 + val2;
+						var ansD2 = document.getElementById("answer2");
+                        ansD2.value = (val1+12)*60 + val2;
+                }
+        </script>
+  </head>
+  <body>
+  <h3><u>MINUTE OF THE DAY</u></h3>
+  <p>Hour &nbsp&nbsp<input type="text" id="value1" name="Hour" value="1"/></p>
+         
+		
+  <p>Min &nbsp&nbsp&nbsp&nbsp<input type="text" id="value2" name="Minute" value="2"/></p>  
+	   
+		
+  <input type="button" name="Sumbit" value="Click here" onclick="javascript:findMinuteOfDay()"/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+        AM<input type="text" id="answer1" name="answer1" value=""/> <br/><br/>
+		PM<input type="text" id="answer2" name="answer2" value=""/>
+  </body>
+</html>
